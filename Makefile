@@ -5,8 +5,6 @@ ARTIFACT_ID := $(shell mvn -f proxy -q -Dexec.executable=echo -Dexec.args='$${pr
 REVISION ?= ${TS}
 USER ?= $(LOGNAME)
 REPO ?= proxy-dev
-PACKAGECLOUD_USER ?= wavefront
-PACKAGECLOUD_REPO ?= proxy-next
 
 DOCKER_TAG ?= ${VERSION}_${REVISION}
 
@@ -60,7 +58,7 @@ build-linux: .info .prepare-builder .cp-linux
 # Push rep & deb packages
 #####
 push-linux: .info .prepare-builder
-	docker run -v $(shell pwd)/:/proxy proxy-linux-builder /proxy/pkg/upload_to_packagecloud.sh ${PACKAGECLOUD_USER}/${PACKAGECLOUD_REPO} /proxy/pkg/package_cloud.conf /proxy/out
+	@echo "\n----------\n Upload to package cloud is removed \n----------\n"
 
 #####
 # Package for Macos

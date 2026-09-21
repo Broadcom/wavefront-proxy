@@ -14,8 +14,9 @@ The recommended (and by far the easiest) way to install the most recent release 
 ### Option 2. Use Linux Packages
 
 We have pre-build packages for popular Linux distros. 
-* Packages for released versions are available at https://packagecloud.io/wavefront/proxy. 
-* Release candidate versions are available at https://packagecloud.io/wavefront/proxy-next.
+* Packages for released versions are available at 
+* https://packages.broadcom.com/ui/repos/tree/General/wavefront-proxy-rpm
+* https://packages.broadcom.com/ui/repos/tree/General/wavefront-proxy-deb
 
 ### Option 3. Build Your Own Proxy
 
