@@ -3,6 +3,5 @@
 FROM ruby:3.0
 
 RUN gem install fpm
-RUN gem install package_cloud
 RUN apt-get update
 RUN apt-get install -y rpm
