@@ -3,5 +3,4 @@
 FROM ruby:3.0
 
 RUN gem install fpm
-RUN apt-get update
-RUN apt-get install -y rpm
+RUN apt-get update && apt-get install -y rpm
